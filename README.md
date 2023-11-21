@@ -1,2 +1,4 @@
 # flatpakmanager
-Manage your old flatpak config, unused flatpak dependencies and all installed flatpaks via a graphical software. 
+Manage your flatpaks - you can remove them, delete old configuration, remove unused flatpaks and more.
+
+![Screenshot](screenshot.png)
