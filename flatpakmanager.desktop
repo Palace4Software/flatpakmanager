@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Flatpakmanager
+Comment=Manage your flatpaks - you can remove them, delete old configuration, remove unused flatpaks and more.
+Keywords=flatpaks;configuration;uninstall;
+Exec=flatpakmanager
+Icon=/usr/share/icons/hicolor/256x256/apps/flatpakmanager.png
+Terminal=false
+Type=Application
+Categories=Utility;System

@@ -1,0 +1,8 @@
+Package: flatpakmanager
+Version: 0.1.0
+Depends: python3, python3-tk
+Maintainer: Palace4Software
+Architecture: all
+Homepage: https://github.com/Palace4Software/flatpakmanager
+Section: utils
+Description: Manage your flatpaks - you can remove them, delete old configuration, remove unused flatpaks and more.
