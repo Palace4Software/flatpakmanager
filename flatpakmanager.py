@@ -20,7 +20,6 @@ def runcommand(command):
     print("Process confirmed.")
     print(command)
     successfulchecker = subprocess.run((command), shell=True)
-    successfulcheck(successfulchecker)
     if successfulchecker.returncode == 0:
         messagebox.showinfo("Successful", "Everything cleaned.")
     else:
