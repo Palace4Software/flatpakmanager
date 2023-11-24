@@ -30,28 +30,32 @@ def cancelcom():
 
 #button definitons
 def uninstalled_config():
-    sure = messagebox.askyesno("Sure?", "Do you want to continue?")
+    suremessage = ("Do you want to continue?", "", "All data of uninstalled flatpaks will be deleted!")
+    sure = messagebox.askyesno("Sure?", "\n".join(suremessage))
     if sure == False:
         cancelcom()
     else:
         runcommand('''flatpak remove --delete-data -y''')
 
 def unused_depend():
-    sure = messagebox.askyesno("Sure?", "Do you want to continue?")
+    suremessage = ("Do you want to continue?", "", "All unused dependencies will be uninstalled!")
+    sure = messagebox.askyesno("Sure?", "\n".join(suremessage))
     if sure == False:
         cancelcom()
     else:
         runcommand('''flatpak remove --unused -y''')
 
 def remove_config_depend():
-    sure = messagebox.askyesno("Sure?", "Do you want to continue?")
+    suremessage = ("Do you want to continue?", "", "All data of uninstalled flatpaks and all unused dependencies will be deleted!")
+    sure = messagebox.askyesno("Sure?", "\n".join(suremessage))
     if sure == False:
         cancelcom()
     else:
         runcommand('''flatpak remove --unused --delete-data -y''')
 
 def remove_all():
-    sure = messagebox.askyesno("Sure?", "Do you want to continue?")
+    suremessage = ("Do you want to continue?", "", "All flatpaks will be uninstalled. The config-data of them will not be touched.")
+    sure = messagebox.askyesno("Sure?", "\n".join(suremessage))
     if sure == False:
         cancelcom()
     else:
@@ -59,7 +63,7 @@ def remove_all():
 
 def aboutprogram():
     showversion = ("Version: " + version)
-    showinfolines = ["Flatpak manager", "Developed by Palace4Software", "", showversion, "", "", "This software is distributed under the MIT License."]
+    showinfolines = ("Flatpak manager", "Developed by Palace4Software", "", showversion, "", "", "This software is distributed under the MIT License.")
     messagebox.showinfo("About", "\n".join(showinfolines))
 
 def exitprogram():
