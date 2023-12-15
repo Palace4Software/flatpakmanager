@@ -1,3 +1,5 @@
+**Project moved to [CodeBerg](https://codeberg.org/Palace4Software/flatpakmanager).**
+
 # flatpakmanager
 Manage your flatpaks - you can remove them, delete old configuration, remove unused flatpaks and more.
 
